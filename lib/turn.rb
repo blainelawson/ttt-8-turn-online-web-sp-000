@@ -25,7 +25,7 @@ def move(board, index, character = "X")
 end
 
 def turn(board)
-  binding.pry
+
   puts "Please enter 1-9:"
   input = gets.strip
 
@@ -34,5 +34,7 @@ def turn(board)
 
   if valid_move?
     move(board, input, character)
+  else
+    turn(board)
   end
 end
