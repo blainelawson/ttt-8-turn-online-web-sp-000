@@ -17,7 +17,7 @@ def valid_move?(board, index)
   elsif board[index] == "" || board[index] == " " || board[index] == nil
     true
   end
-end    
+end
 
 def move(board, index, character = "X")
   board[index] = character
