@@ -32,7 +32,7 @@ def turn(board)
   input = input_to_index(input)
 
 
-  if valid_move?
+  if valid_move?(board, index)
     move(board, input, character)
   else
     turn(board)
